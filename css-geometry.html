@@ -1,0 +1,119 @@
+<html>
+<style>
+
+.rectangle{
+width: 140px;
+height: 30px;
+background-color: black;
+position: relative;
+display: inline-block;
+z-index: 1;
+}
+
+.square-special{
+width: 60px;
+height: 60px;
+background-color: black;
+position: relative;
+display: inline-block;
+margin-left: 10px;
+
+transform: rotate(62deg);
+}
+
+.square-special2{
+width: 60px;
+height: 60px;
+background-color: black;
+position: relative;
+display: inline-block;
+margin-left: 10px;
+
+transform: rotate(45deg);
+}
+
+.square{
+width: 60px;
+height: 60px;
+background-color: black;
+position: absolute;
+display: inline-block;
+margin-left: -60px;
+
+transform: rotate(17deg);
+}
+
+.triangle-right{
+border-top: transparent;
+border-right: transparent;
+border-bottom: transparent;
+border-left: black;
+border-style: solid;
+border-width: 15px;
+margin-left: -4px;
+height: 0;
+width: 0;
+display: inline-block;
+position: relative;
+}
+
+
+.triangle-special{
+border-top: transparent;
+border-right: transparent;
+border-bottom: black;
+border-left: transparent;
+border-style: solid;
+border-width: 30px;
+left: 119px;
+top: 32px;
+height: 0;
+width: 0;
+display: inline-block;
+position: absolute;
+z-index: 0;
+}
+
+.circle{
+border-style: solid;
+border-width: 50px;
+border-radius: 50px;
+height: 0;
+width: 0;
+display: inline-block;
+position: relative;
+}
+
+
+.subdiv{
+margin-top: 20px;
+}
+</style>
+
+<body>
+
+<div>
+<span class="rectangle"></span>
+<span class="triangle-right"></span>
+</div>
+
+<div class="subdiv">
+<span class="rectangle"></span>
+<span class="triangle-special"></span>
+</div>
+
+<div class="subdiv">
+<span class="square-special2"></span>
+</div>
+
+<div class="subdiv">
+<span class="circle"></span>
+</div>
+
+<div class="subdiv">
+<span class="square-special"></span>
+<span class="square"></span>
+</div>
+
+</body>
+</html>
